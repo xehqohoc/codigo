@@ -6,7 +6,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type', 'text/html')
         self.end_headers()
-        with open('tu_archivo.html', 'rb') as file:  # Asegúrate de que el nombre del archivo HTML sea correcto
+        with open('phi.html', 'rb') as file:  # Asegúrate de que el nombre del archivo HTML sea correcto
             self.wfile.write(file.read())
 
     def do_POST(self):
