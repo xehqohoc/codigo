@@ -12,6 +12,6 @@ class RequestHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(b'Recibido')
 
-server = HTTPServer(('localhost', 8080), RequestHandler)
+server = HTTPServer(('127.0.0.1', 8080), RequestHandler)
 print("Servidor iniciado en http://localhost:8080")
 server.serve_forever()
